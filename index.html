@@ -64,72 +64,6 @@
     </div>
 
     <div class="container">
-      <div class="skills" id="skills">
-        <h2 class="title">My Skills</h2>
-
-        <pre>
-          <code>
-    - Javascript
-    - HTML5
-    - CSS3
-    - Vue Js
-    - Vuex, Vue Router
-    - React Js
-    - Redux Toolkit, React Router Dom
-          </code>
-        </pre>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="skills" id="code">
-        <h2 class="title">Code</h2>
-
-        <p style="margin-bottom:10px;">Find a Isogram word</p>
-        <pre>
-              <code>
-    function isIsogram(str) {
-      return new Set(str.toLowerCase()).size === str.length
-    }
-              </code>
-            </pre>
-
-        <p style="margin:10px 0;">Find a pair of gloves</p>
-        <pre>
-              <code>
-    function numberOfPairs(gloves) {
-      let glovesObj = gloves.reduce((acc, el) => {
-        acc[el] = (acc[el] || 0) + 1
-        return acc
-      }, {})
-
-      let r = 0;
-
-      for(color in glovesObj){
-        r+=Math.floor(glovesObj[color] / 2)
-      }
-
-      return r
-    }
-              </code>
-            </pre>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="skills">
-        <div class="title" id="projects">Projects</div>
-
-        <pre>
-          <code>
-    1. <a href="https://github.com/Dior1726/todo_mentor">Todo app React Js and Redux Toolkit</a>
-    2. <a href="https://github.com/Dior1726/todo_app">Todo app Vue Js and Vuex</a>
-          </code>
-        </pre>
-      </div>
-    </div>
-
-    <div class="container">
       <div class="skills">
         <div class="title" id="education">Education</div>
 
@@ -150,23 +84,6 @@
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container ">
-      <a href="https://app.rs.school/">
-        <img width="70" src="./logo-rsschool3.png" alt="rs-school">
-      </a>
-      <p id="date"></p>
-      <a href="https://github.com/Dior1726">
-        <img width="30" src="./github.png" alt="github">
-        <span>Mukhammadyorkhon(@Dior1726)</span>
-      </a>
-    </div>
-  </footer>
-
-  <script>
-    const date = document.querySelector('#date')
-    date.innerHTML = new Date().toLocaleDateString()
-  </script>
 </body>
 
 </html>
